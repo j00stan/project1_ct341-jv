@@ -61,6 +61,7 @@ h4{
 }
 
 h1{
+    display: none;
     font-size: 64px;
     margin-top: -20px;
     margin-bottom: 20px;
