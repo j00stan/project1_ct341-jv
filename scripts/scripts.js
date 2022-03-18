@@ -1,3 +1,3 @@
 console.log(typeof $);
 
-$("h1").fadeIn(2500);
+$(".hero-content").fadeIn(2500);
