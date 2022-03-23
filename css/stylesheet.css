@@ -28,9 +28,9 @@ header{
 }
 
 .hero{
+    position: relative;
     width: 60%;
     padding: 40px 40px 40px 0;
-    transform: translateX(100%);
     background-color: rgb(230, 230, 230);
 }
 
@@ -47,62 +47,58 @@ section{
 }
 
 article{
+    position: relative;
     width: 60%;
     padding: 40px 40px 40px 0;
-    transform: translateX(100%);
     background-color: rgb(230, 230, 230);
 }
 
 .overlap-card{
     position: absolute;
-    left: 16%;
+    top: 10%;
+    left: -10%;
+    bottom: 9%;
     z-index: 2;
-    transform: translateX(-125%);
-    width: 16%;
+    width: 260px;
     border-radius: 10px;
     padding: 30px;
     color: #fff;
 }
 
-.overlap-card,
+
 .hero,
 article{
+    transform: translateX(100%);
     opacity: 0;
-    transition:
-        opacity .4s ease-in-out,
-        transform .6s ease-in-out;
 }
 
-.overlap-card.appear,
 .hero.appear,
 article.appear{
-    opacity: 1;
     transform: translateX(0);
+    opacity: 1;
+    transition: 
+    opacity .6s ease-in-out,
+    transform .8s ease-in-out;
 }
 
 #hero-specimen{
-    height: 23%;
     background-color: #121212;
 }
 
 #hero-specimen h2{
-    font-size: 72pt;
+    font-size: 96pt;
     text-align: center;
-    margin: 0;
 }
 
 #specimen-1{
-    height: 51%;
     background-color: #4A148C;
 }
 
 #specimen-2{
-    height: 54%;
     background-color: #1A237E;
 }
 
 #specimen-3{
-    height: 62%;
     background-color: #F50057;
 }
 
@@ -139,7 +135,7 @@ footer p{
     width: 100%;
     height: 100%;
     padding: 0;
-    transition: transform .2s ease-in-out;
+    transition: transform .2s ease-in;
 }
 
 #top-shortcut:hover{
